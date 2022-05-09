@@ -1,4 +1,4 @@
-# test-kondor
+# koinos-wallet-webapp
 
 ## Project setup
 ```

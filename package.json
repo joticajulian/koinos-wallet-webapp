@@ -1,5 +1,5 @@
 {
-  "name": "test-kondor",
+  "name": "koinos-wallet-webapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "kondor-js": "^0.1.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {

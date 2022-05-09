@@ -27,14 +27,26 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <button @click="get_accounts">get accounts</button>
   </div>
 </template>
 
 <script>
+import * as kondor from "kondor-js";
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    async get_accounts() {
+      try {
+        await kondor.getAccounts();
+      } catch (error) {
+        console.log(error);
+      }
+    }
   }
 }
 </script>
